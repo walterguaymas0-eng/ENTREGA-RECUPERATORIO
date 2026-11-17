@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoTech Solutions - Sustentabilidad</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f0;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .contenedor {
+            max-width: 750px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #217346;
+            text-align: center;
+        }
+
+        .metrica {
+            background-color: #e8f5e9;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .valor {
+            font-size: 28px;
+            font-weight: bold;
+            color: #217346;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>EcoTech Solutions</h1>
+
+        <h2>Panel de Sustentabilidad Industrial</h2>
+
+        <div class="metrica">
+            <h3>Total global de emisiones</h3>
+
+            <p class="valor">
+                {{ total_emisiones }} kgCO2
+            </p>
+        </div>
+
+        <div class="metrica">
+            <h3>Planta de mayor consumo</h3>
+
+            <p class="valor">
+                {{ planta_top|default:"Sin registros" }}
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
